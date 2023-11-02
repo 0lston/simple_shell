@@ -69,3 +69,4 @@ void print_env(char **commands, int *status)
 	free_arr(commands);
 	*status = 0;
 }
+
