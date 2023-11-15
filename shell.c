@@ -35,7 +35,7 @@ int main(int ac, char **av)
 
 		if (is_builtin(commands[0]))
 			builtin_handler(commands, av, &status, counter);
-
-		status = _execute(commands, av, counter);
+		else
+			status = _execute(commands, av, counter);
 	}
 }
