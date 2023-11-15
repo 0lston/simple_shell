@@ -12,14 +12,14 @@ char *_atoi(int num)
 	char digits[] = "0123456789";
 	char buffer[50];
 	char *ptr = &buffer[49];
-	char* output;
+
 	*ptr = '\0';
 	do {
 		*--ptr = digits[num % 10];
 		num /= 10;
 	} while (num);
-    output=_strdup(ptr);
-	return (output);
+     
+	return (_strdup(ptr));
 }
 
 /**
